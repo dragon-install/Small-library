@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Exo&family=Inconsolata&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Library</title>
+</head>
+<body>
+  <div class="alert-container">
+    <h4 class="alert">Please Fill Out All Fields</h4>
+  </div>
+  <header class="header">
+    <h1>Library</h1>
+  </header>
+  <div class="button-container">
+    <button class="button-primary">Add a book</button>
+  </div>
+  <div class="card-container">
+    <div class="card">
+      <div class="delete-button-container">
+        <span><i class="fa-solid fa-delete-left"></i></span>
+      </div>
+      <ul>
+        <li>Knut Hamsun</li>
+        <li>Hunger</li>
+        <li>213</li>
+        <li>Read: <button class="card-button">No</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="modal-container">
+    <div class="modal">
+      <form>
+        <label for="author">Author</label>
+        <input type="text" id="author">
+        <label for="title">Title</label>
+        <input type="text" id="title">
+        <label for="pages-read">Pages Read</label>
+        <input type="number" id="pages-read">
+        <label for="choice">Have you read it?</label>
+        <select name="read" id="read">
+          <option class="read" value="Yes">Yes</option>
+          <option class="not-read" value="No">No</option>
+        </select>
+      </form>
+      <button class="add-book-to-container">Add Book to Container</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.alert-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #f56358;
+  display: none;
+}
+
+.show {
+  filter: none;
+}
+
+.header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.delete-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-delete-left:hover {
+  cursor: pointer;
+}
+
+.card {
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 10px;
+  height: 220px;
+  width: 250px;
+  padding: 30px 25px 15px 25px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal {
+  display: none;
+}
